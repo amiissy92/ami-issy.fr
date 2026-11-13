@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Faire un don à l’Alliance Musulmane d’Issy-les-Moulineaux.">
+  <meta name="theme-color" content="#163b32">
+  <title>Faire un don — Alliance Musulmane d’Issy-les-Moulineaux</title>
+  <link rel="stylesheet" href="style.css">
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=BAA2nl-hgGj8pXdcFGeDSVUxrK6eZ3Dzfs7JEKm-kBuAlXYESOxTPA34rP3iF7y8JAc9ebJaYd1gRXX3qQ&components=hosted-buttons&disable-funding=venmo&currency=EUR">
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AMI — Accueil">
+        <span class="brand-mark" aria-hidden="true">أ</span>
+        <span class="brand-name">
+          <strong>AMI</strong>
+          <span>Issy-les-Moulineaux</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <a class="nav-link" href="index.html">Accueil</a>
+        <a class="nav-link" href="index.html#association">L’association</a>
+        <a class="nav-link" href="enseignements.html">Enseignements</a>
+        <a class="nav-link" href="actions.html">Nos actions</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="button button-small active" href="don.html" aria-current="page">Faire un don <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Soutenir l’association</p>
+        <h1>Faire un <em>don.</em></h1>
+        <p>Votre soutien participe à la solidarité et aux actions de l’association.</p>
+      </div>
+    </section>
+
+    <section class="section info-section">
+      <div class="container donation-card">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Merci pour votre soutien</p>
+          <h2>Un geste pour<br><em>faire la différence.</em></h2>
+          <p class="info-lead">
+            Votre don permet de soutenir les initiatives de l’Alliance Musulmane
+            d’Issy-les-Moulineaux, notamment les actions de solidarité, les repas
+            et les enseignements.
+          </p>
+        </div>
+
+        <div class="paypal-area">
+          <div id="paypal-container-BT2SF95LCJUBE"></div>
+          <script>
+            paypal.HostedButtons({
+              hostedButtonId: "BT2SF95LCJUBE",
+            }).render("#paypal-container-BT2SF95LCJUBE")
+          </script>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">أ</span>
+        <span class="brand-name">
+          <strong>AMI</strong>
+          <span>Issy-les-Moulineaux</span>
+        </span>
+      </a>
+
+      <p>Alliance Musulmane d’Issy-les-Moulineaux</p>
+      <a class="footer-link" href="contact.html">Contact <span aria-hidden="true">→</span></a>
+      <span class="copyright">© <span data-year></span> AMI</span>
+    </div>
+  </footer>
+</body>
+</html>
