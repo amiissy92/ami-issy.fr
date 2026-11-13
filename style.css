@@ -265,3 +265,63 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+.legal-section {
+  background: var(--paper);
+}
+
+.legal-content {
+  max-width: 850px;
+}
+
+.legal-content > h2 {
+  margin-bottom: 36px;
+  font-size: clamp(30px, 4vw, 42px);
+}
+
+.legal-block {
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+.legal-block h3 {
+  margin: 0 0 16px;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.legal-block p,
+.legal-block li {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.legal-block p {
+  margin: 0 0 16px;
+}
+
+.legal-block p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-block ul {
+  padding-left: 22px;
+}
+
+.legal-block a {
+  color: var(--green);
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .legal-block {
+    padding: 22px 0;
+  }
+
+  .legal-block h3 {
+    font-size: 20px;
+  }
+}
