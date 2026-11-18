@@ -482,3 +482,14 @@ h2 {
     font-size: 17px;
   }
 }
+.brand-mark {
+  overflow: hidden;
+  padding: 5px;
+  background: #fff;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
